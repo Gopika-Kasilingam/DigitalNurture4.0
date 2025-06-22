@@ -1,0 +1,48 @@
+﻿1. Understanding Asymptotic Notation
+	Big O Notation (O):
+		Describes the upper bound of an algorithm’s runtime as input size grows.
+		Focuses on the worst-case performance, giving a theoretical measure of efficiency.
+
+	Common Big O Examples:
+		O(1): Constant time (e.g., accessing an array element)
+		O(n): Linear time (e.g., linear search)
+		O(log n): Logarithmic time (e.g., binary search)
+		O(n²): Quadratic time (e.g., bubble sort)
+
+	Best, Average, and Worst Cases:
+		Best Case: Most favorable scenario (e.g., element found at the start).
+		Average Case: Typical case over many inputs.
+		Worst Case: Least favorable scenario (e.g., element not found or at the end).
+
+2. Setup
+	Create a class Product with the following attributes:
+		productId: Unique identifier for each product
+		productName: Name of the product
+		category: Category to which the product belongs
+
+3. Implementation Concept
+	Linear Search:
+		Traverse the array of products one by one.
+		Compare each product’s productName or productId with the search query.
+		Does not require the array to be sorted.
+	Binary Search:
+		Works only on sorted arrays.
+		Repeatedly divides the array in half and compares the middle element with the target.
+		Faster for large datasets but requires sorting beforehand.
+
+4. Analysis
+	Time Complexity Comparison:
+
+	| Algorithm     | Best Case | Average Case | Worst Case |
+	| ------------- | --------- | ------------ | ---------- |
+	| Linear Search | O(1)      | O(n)         | O(n)       |
+	| Binary Search | O(1)      | O(log n)     | O(log n)   |
+
+	Which Algorithm to Use and Why:
+		Use Linear Search:
+			For small or unsorted datasets.
+			When insertion/removal operations are frequent and maintaining order is costly.
+
+		Use Binary Search:
+			For large, sorted datasets.
+			Provides significantly better performance in searching.

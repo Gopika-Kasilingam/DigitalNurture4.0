@@ -1,0 +1,37 @@
+﻿1. Understanding Search Algorithms
+   Linear Search:
+      Iterates through each element in the list to find a match.
+      Simple and effective for small or unsorted datasets.
+      Does not require the data to be sorted.
+      Best Case: O(1), Worst Case: O(n)
+
+   Binary Search:
+      Efficient search algorithm that repeatedly divides a sorted list in half.
+      Compares the target with the middle element and narrows the search to one half.
+      Requires the list to be sorted.
+      Time Complexity: O(log n)
+
+2. Setup
+   Create a class Book with the following attributes:
+      bookId: Unique identifier for the book.
+      title: Title of the book.
+      author: Author of the book.
+
+3. Implementation Concept
+   Linear Search:
+      Traverse the list of books from start to end.
+      Check if each book’s title matches the search query.
+      Return the book(s) when a match is found.
+
+   Binary Search:
+      Sort the list of books by title beforehand.
+      Perform binary search to locate the book with the given title.
+
+4. Analysis
+   Time Complexity:
+      Linear Search: O(n)
+      Binary Search: O(log n)
+
+   When to Use:
+      Use Linear Search for small or unsorted datasets.
+      Use Binary Search when the dataset is large and sorted by title (or author).

@@ -1,0 +1,60 @@
+﻿1. Understanding Sorting Algorithms
+   Bubble Sort:
+      Compares adjacent elements and swaps them if they are in the wrong order.
+      Repeat this process for all elements until the list is sorted.
+      Simple but inefficient for large datasets.
+      Time Complexity:
+         Best Case: O(n) (already sorted)
+         Average/Worst Case: O(n²)
+
+   Insertion Sort:
+      Builds the sorted list one item at a time by comparing each element with the already sorted portion.
+      Efficient for small or nearly sorted datasets.
+      Time Complexity:
+         Best Case: O(n)
+         Worst Case: O(n²)
+
+   Quick Sort:
+      Divide-and-conquer algorithm.
+      Selects a pivot element, partitions the array around the pivot so that all elements less than pivot are on the left and greater on the right, then recursively sorts the subarrays.
+      Efficient for large datasets.
+      Time Complexity:
+         Best/Average Case: O(n log n)
+         Worst Case: O(n²) (can be avoided with good pivot selection)
+
+   Merge Sort:
+      Another divide-and-conquer algorithm.
+      Splits the array into halves, recursively sorts them, and merges the sorted halves.
+      Time Complexity: Always O(n log n)
+
+2. Setup
+   Create a class Order with the following attributes:
+      orderId: Unique identifier for the order
+      customerName: Name of the customer
+      totalPrice: Total amount of the order
+
+3. Implementation Concept
+   Bubble Sort:
+      Repeatedly compare adjacent Order objects by totalPrice.
+      Swap if they are in the wrong order.
+      Continue until no swaps are needed.
+
+   Quick Sort:
+      Choose a pivot (e.g., middle or last element).
+      Partition the array such that:
+      Orders with totalPrice < pivot go to the left
+      Orders with totalPrice > pivot go to the right
+      Recursively sort left and right partitions.
+
+4. Analysis
+   Time Complexity:
+
+   | Algorithm   | Best Case  | Average Case | Worst Case |
+   | ----------- | ---------- | ------------ | ---------- |
+   | Bubble Sort | O(n)       | O(n²)        | O(n²)      |
+   | Quick Sort  | O(n log n) | O(n log n)   | O(n²)      |
+
+	Why Quick Sort is Preferred:
+      Faster on average for large datasets.
+      More efficient in terms of memory compared to Merge Sort (no need for extra arrays).
+      Bubble Sort is simple but becomes highly inefficient as data size grows.

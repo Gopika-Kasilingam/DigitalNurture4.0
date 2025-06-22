@@ -1,0 +1,45 @@
+﻿1. Understanding Array Representation
+   Array Representation in Memory:
+      Arrays are a collection of elements stored in contiguous memory locations.
+      Each element is accessed using an index, starting from 0.
+      Memory address of any element can be calculated as:
+         Address(i)=Base Address+i×Size of each element
+   Advantages:
+      Fast access: Direct indexing allows constant-time (O(1)) access.
+      Simple structure: Easy to declare and use.
+      Memory locality: Better cache performance due to contiguous storage.
+
+2. Setup
+   Create a class Employee with the following attributes:
+      employeeId: Unique identifier
+      name: Name of the employee
+      position: Role/designation in the company
+      salary: Monthly or annual salary
+
+3. Implementation Concept
+   Using Array to Manage Employee Records:
+      Add Employee:
+         Add new employee to the next available index in the array.
+      Search Employee:
+         Linear search to find employee by ID or name.
+      Traverse Employees:
+         Loop through the array and display each employee's details.
+      Delete Employee:
+         Locate the employee and shift subsequent elements one index left.
+
+4. Analysis
+   Time Complexity:
+      Add: O(1) (if not full)
+      Search: O(n) (linear search)
+      Traverse: O(n)
+      Delete: O(n) (due to element shifting)
+
+   Limitations of Arrays:
+      Fixed Size: Size must be known at compile time (in static arrays).
+      Inefficient Deletions/Insertions: Requires shifting elements.
+      Wasted Space or Overflow: Can either waste memory or exceed bounds if not managed properly.
+
+   When to Use Arrays:
+      When quick access by index is needed.
+      When the number of elements is known and fixed.
+      For small datasets where dynamic memory management isn't required.
