@@ -1,0 +1,25 @@
+﻿1. Recursive Algorithms
+   Recursion is a problem-solving technique where a function calls itself to solve smaller instances of the same problem.
+   It simplifies complex problems by breaking them into simpler subproblems.
+   Each recursive call reduces the problem size, eventually reaching a base case that terminates the recursion.
+
+2. Setup
+   In financial forecasting, we can use recursion to model the compound growth of a value over time.
+   A recursive method can be used to calculate the future value by repeatedly applying the growth rate to the previous value.
+
+3. Implementation Concept
+   Formula for future value using compound growth:
+   FutureValue(n)=FutureValue(n−1)×(1+r)
+   Where:
+      n = number of periods
+      r = growth rate
+      Base case: FutureValue(0) = initial value
+
+4. Analysis
+   Time Complexity:
+      The naive recursive approach has O(n) time complexity (linear), as it makes one call per time period.
+      If overlapping subproblems existed (like in Fibonacci), it could be exponential without memoization.
+
+   Optimization Techniques:
+      Memoization: Store previously computed results to avoid redundant computations.
+      Dynamic Programming: Convert the recursive solution to an iterative one using tabulation.

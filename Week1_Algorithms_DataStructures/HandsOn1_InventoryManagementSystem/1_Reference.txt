@@ -1,0 +1,46 @@
+﻿1. Understand the Problem
+   Importance of Data Structures and Algorithms:
+      Large inventories involve managing thousands of products efficiently.
+      Proper data structures help in fast access, insertion, deletion, and search operations.
+      Efficient algorithms reduce the processing time and improve system responsiveness.
+
+   Suitable Data Structures:
+      ArrayList:
+         Good for storing and accessing elements in order.
+         Slower for search, insert, or delete operations (O(n)).
+
+      HashMap:
+         Ideal for key-based access using productId.
+         Offers constant-time complexity for add, update, and delete operations (O(1)) in average case.
+
+2. Setup
+   Create a new project and define a class Product with the following attributes:
+      productId: Unique identifier for the product
+      productName: Name of the product
+      quantity: Available stock in the warehouse
+      price: Cost per unit of the product
+
+3. Implementation Concept
+   Choose a Data Structure:
+      HashMap<String, Product> inventory
+         Use productId as the key for fast lookups and operations.
+
+   Key Operations:
+      Add Product: Insert a new product using its productId as key.
+      Update Product: Replace the product object in the map if the productId already exists.
+      Delete Product: Remove the entry from the map by its productId.
+
+4. Analysis
+   Time Complexity in HashMap (Average Case):
+
+   | Operation | Time Complexity |
+   | --------- | --------------- |
+   | Add       | O(1)            |
+   | Update    | O(1)            |
+   | Delete    | O(1)            |
+   | Search    | O(1)            |
+
+	Optimization Tips:
+      Use a HashMap for fast access via unique product identifiers.
+      If frequent sorting or traversal is needed by name or quantity, consider using TreeMap (O(log n)) or maintain a separate sorted list.
+      Avoid linear structures like ArrayList for search-heavy operations without indexing.

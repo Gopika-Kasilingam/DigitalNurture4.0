@@ -1,0 +1,4 @@
+22:35:07.312 [main] DEBUG com.example.Code.AppenderExample - Debug message - for development details
+22:35:07.314 [main] INFO  com.example.Code.AppenderExample - Info message - general application flow
+22:35:07.315 [main] WARN  com.example.Code.AppenderExample - Warning message - something might be wrong
+22:35:07.315 [main] ERROR com.example.Code.AppenderExample - Error message - something went wrong

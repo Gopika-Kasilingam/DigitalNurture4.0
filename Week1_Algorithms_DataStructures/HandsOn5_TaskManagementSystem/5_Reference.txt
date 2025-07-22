@@ -1,0 +1,45 @@
+﻿1. Understanding Linked Lists
+   Singly Linked List:
+      Each node contains:
+         Data (e.g., task details)
+         Pointer to the next node
+      Traversal is only in one direction (from head to end).
+      Simpler and uses less memory than doubly linked lists.
+
+   Doubly Linked List:
+      Each node contains:
+      Data
+      Pointer to the next node
+      Pointer to the previous node
+      Allows bidirectional traversal.
+      Slightly more memory overhead due to the extra pointer.
+
+2. Setup
+   Create a class Task with the following attributes:
+      taskId: Unique identifier for the task
+      taskName: Description or title of the task
+      status: Status of the task (e.g., pending, completed)
+
+3. Implementation Concept
+   Using Singly Linked List to manage tasks:
+      Add Task:
+         Insert a new task node at the end or beginning of the list.
+      Search Task:
+         Traverse the list and compare taskId or taskName.
+      Traverse Tasks:
+         Visit each node from the head and display task details.
+      Delete Task:
+         Locate the node to be deleted and adjust the pointers of the previous node to remove it.
+
+4. Analysis
+   Time Complexity:
+      Add at end: O(n)
+      Add at beginning: O(1)
+      Search: O(n)
+      Delete: O(n)
+      Traverse: O(n)
+
+   Advantages of Linked Lists over Arrays:
+      Dynamic Size: Linked lists can grow or shrink during runtime without reallocation.
+      Efficient Insertions/Deletions: No need to shift elements like in arrays.
+      Memory Utilization: Better for systems with unpredictable workloads.
