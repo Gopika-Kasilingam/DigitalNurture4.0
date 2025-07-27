@@ -1,0 +1,11 @@
+# Ignore dependency and build folders
+node_modules/
+build/
+dist/
+.next/
+
+# Ignore environment and system files
+.env
+.DS_Store
+Thumbs.db
+.vscode/
